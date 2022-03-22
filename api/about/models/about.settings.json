@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "abouts",
   "info": {
-    "name": "projects",
+    "name": "about",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "info": {
       "type": "text",
       "required": true
     },
@@ -24,26 +24,13 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
-    },
-    "url": {
-      "type": "string",
-      "required": true
-    },
-    "github": {
-      "type": "string",
-      "required": true
-    },
-    "features": {
-      "type": "boolean",
-      "default": false,
-      "required": true
     },
     "stack": {
       "type": "component",
